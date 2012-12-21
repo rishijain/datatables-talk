@@ -1,0 +1,16 @@
+%h1 Data-Tables
+%table#users_list
+  %thead
+    %tr 
+      %th Name
+      %th Email
+      %th Active
+  %tbody
+    - @users.each do |d|
+      %tr
+        %td #{d.name}
+        %td #{d.email}
+        %td #{d.active}
+
+:javascript
+  $('#users_list').dataTable();
