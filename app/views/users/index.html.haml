@@ -1,4 +1,7 @@
 %h1 Data-Tables
+= link_to 'Clear Table', '#',:class => "btn btn-primary", :id => "clear_table_button"
+= link_to 'Add a row to table', '#',:class => "btn btn-secondary", :id => "add_row_table"
+= link_to 'Destroy Table', '#',:class => "btn btn-primary", :id => "destroy_table_button"
 %table#users_list
   %thead
     %tr 
@@ -12,5 +15,16 @@
         %td #{d.email}
         %td #{d.active}
 
+.modal.hide.fade.dataEntryModal
+  .modal-header
+    %h3 Enter the data
+  .modal-body
+    %label Name
+    =text_field_tag 'name_field'
+    %label Email
+    =text_field_tag 'email_field'
+  .modal-footer
+    = link_to 'Ok', '#', :class => "btn", :id => "submit_add_row"
+
 :javascript
-  $('#users_list').dataTable();
+  var oTable = $('#users_list').dataTable();
