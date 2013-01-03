@@ -1,7 +1,7 @@
 %html
   %head
     %title DatatablesTalk
-    = stylesheet_link_tag    "application", "bootstrap.min", "bootstrap-responsive.min", "jquery.dataTables_themeroller", "bootstrap", "bootstrap-responsive", "jquery.dataTables"
+    = stylesheet_link_tag    "application", "bootstrap.min", "bootstrap-responsive.min", "jquery.dataTables_themeroller", "bootstrap", "bootstrap-responsive", "jquery.dataTables", params[:controller]
     = stylesheet_link_tag "impress" if params[:action] == "presentation"
     = javascript_include_tag "application", "bootstrap", "bootstrap.min", "jquery", "jquery.dataTables", "jquery.dataTables.min"
     = javascript_include_tag "impress" if params[:action] == "presentation"
