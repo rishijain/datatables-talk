@@ -55,6 +55,75 @@
       %q
         %b HTML table format
         = image_tag 'table_image.png'
+    .step.slide{"data-x" => "6000", "data-y" => "-1500"}
+      %q
+        %b Basic Configuration
+        = image_tag 'initial_code.png'
+    .step.slide{"data-x" => "7000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 1.) aaSorting :- It allows you to define which columns the sorting should be done on and in what direction.
+        %p.small_text The default value set is [[0, 'asc']]
+        = image_tag 'sorting_1.png'
+    .step.slide{"data-x" => "8000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 2.) bFilter :- Enable or disable filtering of data. Filtering is 'smart' filtering.
+        %p.small_text The default value set is true.
+        = image_tag 'filter_1.png'
+    .step.slide{"data-x" => "9000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 3.) bSearchable :- Enable or disable filtering on data in this column.
+        %p.small_text The default value set is true.
+        = image_tag 'searchable_1.png'
+    .step.slide{"data-x" => "10000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 4.) bSortable :- Enable or disable sorting on this column. 
+        %p.small_text By default it allows sorting on all the columns. Its default value is true.
+        = image_tag 'sorting_2.png'
+    .step.slide{"data-x" => "11000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 5.) bVisible :- Enable or disable sorting on this column. 
+        %p.small_text By default, all the columns are visible.
+        = image_tag 'visible_1.png'
+    .step.slide{"data-x" => "12000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 6.) fnAddData :- Add a single row or multiple rows to the table.
+        %p.small_text The inputs this function takes:-
+        %p.small_text 1.) 1D array of data. It adds a single row to the table.
+        %p.small_text 2.) 2D array of arrays. It adds multiple rows in a single call.
+    .step.slide{"data-x" => "13000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 7.) oLanguage :- It is used to change the language information provided by DataTables.
+        = image_tag 'language_1.png', :style => "height:310px;"
+    .step.slide{"data-x" => "14000", "data-y" => "-1500"}
+      %q
+        %b Some Other Options
+        %p.small_text 1.) fnClearTable
+        %p.small_text 2.) fnDestroy
+        %p.small_text 3.) sClass
+        %p.small_text 4.) sWidth
+        %p.small_text 5.) bPaginate
+        %p.small_text You can find a lot more options at datatables.net
+    .step.slide{"data-x" => "15000", "data-y" => "-1500"}
+      %q 
+        %b What else is out there other than DataTables ?
+      %p.medium_text 1.) FooTables
+      %p.medium_text 2.) Zurb's datatables
+      %p.medium_text 3.) Chris Coyier's datatables
+      %p.medium_text{:style => "margin-left:140px;"} and some more plugins.
+    .step.slide{"data-x" => "16000", "data-y" => "-1500"}
+      %q 
+        %b Refrences & other plugins used: - 
+      %p.medium_text 1.) datatables.net
+      %p.medium_text 2.) impress.js https://github.com/bartaz/impress.js/
+      %p.medium_text Presentation and demo at 
+      %p.medium_text git@github.com:rishijain/datatables-talk.git
     #title.step{"data-scale" => "4", "data-x" => "0", "data-y" => "0"}
   .hint
     %p Use a spacebar or arrow keys to navigate

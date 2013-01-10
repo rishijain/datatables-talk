@@ -28,4 +28,4 @@
     = link_to 'Ok', '#', :class => "btn", :id => "submit_add_row"
 
 :javascript
-  var oTable = $('#users_list').dataTable();
+  var oTable = $('#users_list').dataTable({"aaSorting": [[0,'desc'], [1,'asc']]});

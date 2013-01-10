@@ -9,9 +9,8 @@ $ ->
   $('#destroy_table_button').click ->
     oTable.fnDestroy()
 
-  $('#add_row_table').live('click', ->
+  $('#add_row_table').click ->
     $('.dataEntryModal').modal 'show'
-  )
 
   $('#submit_add_row').click ->
     oTable.fnAddData([$('#name_field').val(), $('#email_field').val(), true])
