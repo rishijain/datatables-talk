@@ -1,7 +1,8 @@
 %h1 Data-Tables
 = link_to 'Home', root_path,:class => "btn"
 = link_to 'Clear Table', '#',:class => "btn btn-primary", :id => "clear_table_button"
-= link_to 'Add a row to table', '#',:class => "btn btn-secondary", :id => "add_row_table"
+=# link_to 'Add a row to table', '#', "data-target" => ".dataEntryModal", "data-toggle" => "modal", "data-backdrop" => true, :role => "button", :class => "btn btn-secondary", :id => "add_row_table"
+= link_to 'Add a row to table', '#', :class => "btn btn-secondary", :id => "add_row_table"
 = link_to 'Destroy Table', '#',:class => "btn btn-primary", :id => "destroy_table_button"
 %table#users_list
   %thead
@@ -16,7 +17,7 @@
         %td #{d.email}
         %td #{d.active}
 
-.dataEntryModal.modal.hide.fade
+#of-dataEntryModal-modal.modal.hide.fade
   .modal-header
     %h3 Enter the data
   .modal-body
@@ -28,4 +29,4 @@
     = link_to 'Ok', '#', :class => "btn", :id => "submit_add_row"
 
 :javascript
-  var oTable = $('#users_list').dataTable({"aaSorting": [[0,'desc'], [1,'asc']]});
+  var oTable = $('#users_list').dataTable();

@@ -3,7 +3,4 @@
   = f.text_field :name
   %label Email
   = f.text_field :email, :label => "email"
-  %label active
-  - ['yes', 'no'].each do |d|
-    = f.radio_button :active, d
   = f.submit
