@@ -29,4 +29,12 @@
     = link_to 'Ok', '#', :class => "btn", :id => "submit_add_row"
 
 :javascript
+  data = [['a', 'b', true], ['c', 'd', false]]
+  //for bsortable
+  //var oTable = $('#users_list').dataTable({"aoColumnDefs":[{"bSortable":false, "aTargets":[0]}]});
+  //var oTable = $('#users_list').dataTable({"aaData":data, "aoColumnDefs":[{"bSortable":false, "aTargets":[0]}]});
+  //for pagination
+  //var oTable = $('#users_list').dataTable({"sPaginationType":"full_numbers", "iDisplayLength":2});
+  //for ajax
+  //var oTable = $('#users_list').dataTable({"bProcessing":true, "sAjaxSource":"/users/load_data", "iDisplayLength":2});
   var oTable = $('#users_list').dataTable();

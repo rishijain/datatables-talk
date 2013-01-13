@@ -25,4 +25,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def load_data
+    json = {"sEcho" => 1, "iTotalRecords" => "57", "iTotalDisplayRecords" => "57", "aaData" => [[1,2,3], [4,5,6], [7,8,9], [10,11,12]]}
+    render :json => json
+  end
+
 end

@@ -103,6 +103,56 @@
         = image_tag 'language_1.png', :style => "height:310px;"
     .step.slide{"data-x" => "14000", "data-y" => "-1500"}
       %q
+        %b Basic Options
+        %p.small_text 8.) bStateSave :- Datatables can save the state of the table even after user reloads the page.
+        %p.small_text The default value is false but it can be changed using the bStateSave option.
+        = image_tag 'statesave_1.png', :style => "height:250px;"
+    .step.slide{"data-x" => "15000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 9.) bPaginate :- Datatables provide a basic 2 button controls for pagination.
+        %p.small_text To enable/disable pagination, use bPaginate option.(default is true)
+        %p.small_text sPaginationType accepts 2 values 1.) two_button 2.) full_numbers
+    .step.slide{"data-x" => "16000", "data-y" => "-1500"}
+      %q 
+        %b What are the different sources of data?
+        %p.medium_text 1.) haml
+        %p.medium_text 2.) json 
+        %p.medium_text 3.) ajax load
+        %p.medium_text 4.) server side
+    .step.slide{"data-x" => "17000", "data-y" => "-1500"}
+      %q
+        %b haml data
+        = image_tag 'haml_1.png', :style =>"height:250px;"
+    .step.slide{"data-x" => "18000", "data-y" => "-1500"}
+      %q
+        %b json data
+        %p 1.) aaData - 2d array of data 
+        %p.small_text [ ["a", "b", "c"],  ["d", "e", "f"],  ["g", "h", "i"]]
+        %p 2.) aData - array of json objects 
+        %p.small_text [ [json_object1, json_object2] ]
+    .step.slide{"data-x" => "19000", "data-y" => "-1500"}
+      %q
+        %b aData - how does it work?
+        = image_tag 'adata_2.png'
+    .step.slide{"data-x" => "20000", "data-y" => "-1500"}
+      %q
+        %b ajax load
+        %p.small_text bProcessing - It specifies that ajax will be used for data loading.
+        %p.small_text sAjaxSource - It takes the path for controller's method.
+        = image_tag 'ajax_1.png', :style => "height:200px;"
+    .step.slide{"data-x" => "21000", "data-y" => "-1500"}
+      %q
+        %b Server side processing
+        %p.small_text When you are dealing with really large database.
+        %p.small_text bProcessing - It specifies that ajax will be used for data processing.
+        %p.small_text bServerSide - It specifies that server side processing is being used.
+        %p.small_text sAjaxSource - It takes the path for method where you write data collection code, sorting, filtering queries.
+    .step.slide{"data-x" => "22000", "data-y" => "-1500"}
+      %q
+        %b When to use these different way of loading data?
+    .step.slide{"data-x" => "23000", "data-y" => "-1500"}
+      %q
         %b Some Other Options
         %p.small_text 1.) fnClearTable
         %p.small_text 2.) fnDestroy
@@ -110,14 +160,14 @@
         %p.small_text 4.) sWidth
         %p.small_text 5.) bPaginate
         %p.small_text You can find a lot more options at datatables.net
-    .step.slide{"data-x" => "15000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "24000", "data-y" => "-1500"}
       %q 
         %b What else is out there other than DataTables ?
       %p.medium_text 1.) FooTables
       %p.medium_text 2.) Zurb's datatables
       %p.medium_text 3.) Chris Coyier's datatables
       %p.medium_text{:style => "margin-left:140px;"} and some more plugins.
-    .step.slide{"data-x" => "16000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "25000", "data-y" => "-1500"}
       %q 
         %b Refrences & other plugins used: - 
       %p.medium_text 1.) datatables.net

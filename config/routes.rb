@@ -9,6 +9,7 @@ DatatablesTalk::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
+  match '/users/load_data' => 'users#load_data'
   resources :users
   match '/presentation' => 'home#presentation', :as => :presentation_path
   # Sample resource route (maps HTTP verbs to controller actions automatically):
