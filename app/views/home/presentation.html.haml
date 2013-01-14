@@ -30,128 +30,94 @@
           and adds advanced interaction controls to any html table.
     .step.slide{"data-x" => "1000", "data-y" => "-1500"}
       %q
+        %b A much better looking datatables
+        = image_tag 'onefactory_1.png', :style => "height:350px;"
+    .step.slide{"data-x" => "2000", "data-y" => "-1500"}
+      %q
         %b Why you need DataTables?
         %p 1.) Filtering
         %p 2.) Sorting
         %p 3.) Pagination
         %p 4.) Display data from multiple sources & lot more.
-    .step.slide{"data-x" => "2000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "3000", "data-y" => "-1500"}
       %q
         %b How to use DataTables?
         %p 1.) Download the datatables package from http://www.datatables.net/download/
         %p.small_text 1.a) Include the DataTables js and css file in your layout's head section.
-    .step.slide{"data-x" => "3000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "4000", "data-y" => "-1500"}
       %q
         %b How to use DataTables?
         %p 2.) Include in your gemfile gem 'jquery-datatables-rails'
         %p.small_text 2.a) Add the javascript to application.js as //= require dataTables/jquery.dataTables
         %p.small_text 2.b) Add the stylesheet to application.css as //= require dataTables/jquery.dataTables
-    .step.slide{"data-x" => "4000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "5000", "data-y" => "-1500"}
       %q
         %b Dependencies/Requirements
         %p 1.) jQuery 1.3 or higher
         %p 2.) HTML table format
-    .step.slide{"data-x" => "5000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "6000", "data-y" => "-1500"}
       %q
         %b HTML table format
         = image_tag 'table_image.png'
-    .step.slide{"data-x" => "6000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "7000", "data-y" => "-1500"}
       %q
         %b Basic Configuration
         = image_tag 'initial_code.png'
-    .step.slide{"data-x" => "7000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "8000", "data-y" => "-1500"}
       %q
         %b Basic Options
         %p.small_text 1.) aaSorting :- It allows you to define which columns the sorting should be done on and in what direction.
         %p.small_text The default value set is [[0, 'asc']]
         = image_tag 'sorting_1.png'
-    .step.slide{"data-x" => "8000", "data-y" => "-1500"}
-      %q
-        %b Basic Options
-        %p.small_text 2.) bFilter :- Enable or disable filtering of data. Filtering is 'smart' filtering.
-        %p.small_text The default value set is true.
-        = image_tag 'filter_1.png'
     .step.slide{"data-x" => "9000", "data-y" => "-1500"}
-      %q
-        %b Basic Options
-        %p.small_text 3.) bSearchable :- Enable or disable filtering on data in this column.
-        %p.small_text The default value set is true.
-        = image_tag 'searchable_1.png'
-    .step.slide{"data-x" => "10000", "data-y" => "-1500"}
       %q
         %b Basic Options
         %p.small_text 4.) bSortable :- Enable or disable sorting on this column. 
         %p.small_text By default it allows sorting on all the columns. Its default value is true.
         = image_tag 'sorting_2.png'
+    .step.slide{"data-x" => "10000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 2.) bFilter :- Enable or disable filtering of data. Filtering is 'smart' filtering.
+        %p.small_text The default value set is true.
+        = image_tag 'filter_1.png'
     .step.slide{"data-x" => "11000", "data-y" => "-1500"}
+      %q
+        %b Basic Options
+        %p.small_text 3.) bSearchable :- Enable or disable filtering on data in this column.
+        %p.small_text The default value set is true.
+        = image_tag 'searchable_1.png'
+    .step.slide{"data-x" => "12000", "data-y" => "-1500"}
       %q
         %b Basic Options
         %p.small_text 5.) bVisible :- Enable or disable sorting on this column. 
         %p.small_text By default, all the columns are visible.
         = image_tag 'visible_1.png'
-    .step.slide{"data-x" => "12000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "13000", "data-y" => "-1500"}
       %q
         %b Basic Options
         %p.small_text 6.) fnAddData :- Add a single row or multiple rows to the table.
         %p.small_text The inputs this function takes:-
         %p.small_text 1.) 1D array of data. It adds a single row to the table.
         %p.small_text 2.) 2D array of arrays. It adds multiple rows in a single call.
-    .step.slide{"data-x" => "13000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "14000", "data-y" => "-1500"}
       %q
         %b Basic Options
         %p.small_text 7.) oLanguage :- It is used to change the language information provided by DataTables.
         = image_tag 'language_1.png', :style => "height:310px;"
-    .step.slide{"data-x" => "14000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "15000", "data-y" => "-1500"}
       %q
         %b Basic Options
         %p.small_text 8.) bStateSave :- Datatables can save the state of the table even after user reloads the page.
         %p.small_text The default value is false but it can be changed using the bStateSave option.
         = image_tag 'statesave_1.png', :style => "height:250px;"
-    .step.slide{"data-x" => "15000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "16000", "data-y" => "-1500"}
       %q
         %b Basic Options
         %p.small_text 9.) bPaginate :- Datatables provide a basic 2 button controls for pagination.
         %p.small_text To enable/disable pagination, use bPaginate option.(default is true)
         %p.small_text sPaginationType accepts 2 values 1.) two_button 2.) full_numbers
-    .step.slide{"data-x" => "16000", "data-y" => "-1500"}
-      %q 
-        %b What are the different sources of data?
-        %p.medium_text 1.) haml
-        %p.medium_text 2.) json 
-        %p.medium_text 3.) ajax load
-        %p.medium_text 4.) server side
     .step.slide{"data-x" => "17000", "data-y" => "-1500"}
-      %q
-        %b haml data
-        = image_tag 'haml_1.png', :style =>"height:250px;"
-    .step.slide{"data-x" => "18000", "data-y" => "-1500"}
-      %q
-        %b json data
-        %p 1.) aaData - 2d array of data 
-        %p.small_text [ ["a", "b", "c"],  ["d", "e", "f"],  ["g", "h", "i"]]
-        %p 2.) aData - array of json objects 
-        %p.small_text [ [json_object1, json_object2] ]
-    .step.slide{"data-x" => "19000", "data-y" => "-1500"}
-      %q
-        %b aData - how does it work?
-        = image_tag 'adata_2.png'
-    .step.slide{"data-x" => "20000", "data-y" => "-1500"}
-      %q
-        %b ajax load
-        %p.small_text bProcessing - It specifies that ajax will be used for data loading.
-        %p.small_text sAjaxSource - It takes the path for controller's method.
-        = image_tag 'ajax_1.png', :style => "height:200px;"
-    .step.slide{"data-x" => "21000", "data-y" => "-1500"}
-      %q
-        %b Server side processing
-        %p.small_text When you are dealing with really large database.
-        %p.small_text bProcessing - It specifies that ajax will be used for data processing.
-        %p.small_text bServerSide - It specifies that server side processing is being used.
-        %p.small_text sAjaxSource - It takes the path for method where you write data collection code, sorting, filtering queries.
-    .step.slide{"data-x" => "22000", "data-y" => "-1500"}
-      %q
-        %b When to use these different way of loading data?
-    .step.slide{"data-x" => "23000", "data-y" => "-1500"}
       %q
         %b Some Other Options
         %p.small_text 1.) fnClearTable
@@ -160,19 +126,109 @@
         %p.small_text 4.) sWidth
         %p.small_text 5.) bPaginate
         %p.small_text You can find a lot more options at datatables.net
+    .step.slide{"data-x" => "18000", "data-y" => "-1500"}
+      %q 
+        %b What are the different sources of data?
+        %p.medium_text 1.) haml
+        %p.medium_text 2.) json 
+        %p.medium_text 3.) ajax load
+        %p.medium_text 4.) server side
+    .step.slide{"data-x" => "19000", "data-y" => "-1500"}
+      %q
+        %b haml data
+        = image_tag 'haml_1.png', :style =>"height:250px;"
+    .step.slide{"data-x" => "20000", "data-y" => "-1500"}
+      %q
+        %b json data
+        %p 1.) aaData - 2d array of data 
+        %p.small_text [ ["a", "b", "c"],  ["d", "e", "f"],  ["g", "h", "i"]]
+        %p 2.) aData - array of json objects 
+        %p.small_text [ json_object1, json_object2 ]
+    .step.slide{"data-x" => "21000", "data-y" => "-1500"}
+      %q
+        %b aData - how does it work?
+        = image_tag 'adata_2.png'
+    .step.slide{"data-x" => "22000", "data-y" => "-1500"}
+      %q
+        %b ajax load
+        %p.small_text bProcessing - It specifies that ajax will be used for data loading.
+        %p.small_text sAjaxSource - It takes the path for controller's method.
+        = image_tag 'ajax_1.png', :style => "height:200px;"
+    .step.slide{"data-x" => "23000", "data-y" => "-1500"}
+      %q
+        %b Server side processing
+        %p.small_text When you are dealing with really large database.
+        %p.small_text 
+          %b bProcessing - 
+          It specifies that ajax will be used for data processing.
+        %p.small_text 
+          %b bServerSide - 
+          It specifies that server side processing is being used.
+        %p.small_text 
+          %b sAjaxSource - 
+          It takes the path for method where you write data collection code, sorting, filtering queries.
     .step.slide{"data-x" => "24000", "data-y" => "-1500"}
+      %q
+        %b When to use these different way of loading data?
+    .step.slide{"data-x" => "25000", "data-y" => "-1500"}
+      %q
+        %b Bootstrap Tables
+        %p.small_text They only support sorting of data. They uses jquery TableSorter library to sort the data.
+        = image_tag 'bootstrap_1.png', :style => "height:300px;"
+    .step.slide{"data-x" => "26000", "data-y" => "-1500"}
       %q 
         %b What else is out there other than DataTables ?
       %p.medium_text 1.) FooTables
       %p.medium_text 2.) Zurb's datatables
       %p.medium_text 3.) Chris Coyier's datatables
       %p.medium_text{:style => "margin-left:140px;"} and some more plugins.
-    .step.slide{"data-x" => "25000", "data-y" => "-1500"}
+    .step.slide{"data-x" => "27000", "data-y" => "-1500"}
+      %q
+        %b Local Storage
+      %p.medium_text{:style => "margin-top:30px;"} It implies saving the state of your webpage 
+      %p{:style => "margin-top:30px;"}
+        %b{:style => "font-size:100px;"} locally.
+    .step.slide{"data-x" => "28000", "data-y" => "-1500"}
+      %q
+        %b History of Local Storage
+      %p.medium_text Native Desktop Applications held an advantage over Web applications. It is easy to store the state of your application on Desktop.
+      %p.medium_text The different ways to store the data on desktop are on XML files, INI files, registry, etc.
+      %p.medium_text Web Applications did not have this luxury.
+    .step.slide{"data-x" => "29000", "data-y" => "-1500"}
+      %q
+        %b History of Local Storage
+      %p.medium_text Web Applications used cookies to store small amounts of data.
+      %p.medium_text The deal breakers for cookies are :-
+      %p.medium_text 1.) Included with every HTTP request.
+      %p.medium_text 2.) Included with every HTTP request.
+      %p.medium_text 3.) Limited to about 4kb of data.
+    .step.slide{"data-x" => "30000", "data-y" => "-1500"}
+      %q
+        %b What do I expect ?
+      %p.medium_text 1.) Lot of storage space
+      %p.medium_text 2.) On the client
+      %p.medium_text 3.) That persists beyond the page refresh.
+    .step.slide{"data-x" => "31000", "data-y" => "-1500"}
+      %q
+        %b HTML5 -  The Game Changer
+    .step.slide{"data-x" => "32000", "data-y" => "-1500"}
+      %q
+        %b A little about HTML5
+      %p.medium_text 1.) How do I know whether my browser supports HTML5? - WRONG QUESTION !
+      %p.medium_text HTML5 is not one big thing. It is a set of features which are built on the success of HTML4.
+      %p.medium_text 2.) Do I need to throw away my existing html code? 
+      %p.medium_text NO. If Your application worked yesterday in HTML4, it will still work in HTML5.
+    .step.slide{"data-x" => "33000", "data-y" => "-1500"}
+      %q
+        %b A little about HTML5
+      %p.medium_text 3.) How do I upgrade to HMTL5 
+      %p.medium_text 
+    .step.slide{"data-x" => "34000", "data-y" => "-1500"}
       %q 
         %b Refrences & other plugins used: - 
       %p.medium_text 1.) datatables.net
       %p.medium_text 2.) impress.js https://github.com/bartaz/impress.js/
-      %p.medium_text Presentation and demo at 
+      %p.medium_text Presentation and Demo at 
       %p.medium_text git@github.com:rishijain/datatables-talk.git
     #title.step{"data-scale" => "4", "data-x" => "0", "data-y" => "0"}
   .hint

@@ -1,1 +1,10 @@
-This is for the talk on datatables at josh software
+This is for the talk on datatables at josh software.
+
+Setup
+1. Clone it
+2. run bundle install
+3. create the database
+4. run the migrations
+5. run the seed file
+6. That's it- you are good to go ..!!
+
