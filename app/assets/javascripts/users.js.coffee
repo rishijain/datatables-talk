@@ -10,8 +10,5 @@ $ ->
     oTable.fnDestroy()
 
   $('#add_row_table').click ->
-    $('#of-dataEntryModal-modal').modal({keyboard:true, backdrop:'static', show:true})
-
-  $('#submit_add_row').click ->
-    oTable.fnAddData([$('#name_field').val(), $('#email_field').val(), true])
+    oTable.fnAddData(['test_name', 'test_email@email.com', true])
 
