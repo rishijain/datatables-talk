@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'rails', '3.1.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.3.7'
+gem 'mysql2', '0.3.10'
 gem 'haml-rails'
 
 # Gems used only for assets and not required
@@ -21,6 +21,16 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :staging do
+  gem 'pg'
+  gem 'thin'
+end
+
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

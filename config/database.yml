@@ -13,7 +13,7 @@ test:
   password: josh123
 
 production:
-  adapter: mysql2
+  adapter: pg
   database: datatables_talk_production
   pool: 5
   timeout: 5000
